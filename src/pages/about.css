@@ -1,0 +1,48 @@
+.about-banner {
+  /* background-image: url("https://via.placeholder.com/1600x500"); */
+  background-image: url("https://t3.ftcdn.net/jpg/08/16/23/16/360_F_816231699_LmuSwAU1oELCQibm19GVVygotV7gjrVU.jpg");
+  background-size: cover;
+  padding: 50px 0;
+  color: white;
+}
+
+.about-header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+}
+
+.about-image {
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.about-content {
+  margin-top: 50px;
+}
+
+.about-values ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-values ul li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.mission-goals h4 {
+  font-size: 1.3rem;
+}
+
+#photoCredit {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+#photoCredit:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,96 @@
+/* Main container with background image */
+.showMenu-container {
+  background-image: url("https://d2w1ef2ao9g8r9.cloudfront.net/otl-images/_1600x847_crop_center-center_82_line/open-a-bakery-header.jpg"); /* Background image URL */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* To ensure the background image doesn't overflow */
+  transition: all 0.5s ease-in-out;
+}
+
+/* Content section */
+.showMenu-content {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 600px;
+  transition: all 0.5s ease;
+}
+
+.showMenu-title {
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 2s ease-out; /* Animation on page load */
+}
+
+.showMenu-description {
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 3s ease-out; /* Animation delay for the description */
+}
+
+.showMenu-button {
+  padding: 18px 35px;
+  font-size: 1.5rem;
+  background-color: #ff5722; /* Vibrant color for the button */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.showMenu-button:hover {
+  background-color: #e64a19; /* Change to darker shade on hover */
+  transform: scale(1.1); /* Slight grow effect on hover */
+}
+
+.showMenu-button:focus {
+  outline: none;
+}
+
+/* Footer overlay text */
+.showMenu-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  animation: fadeIn 4s ease-out; /* Animation for footer text */
+}
+
+.showMenu-footer-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

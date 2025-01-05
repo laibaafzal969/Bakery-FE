@@ -4,12 +4,16 @@
   "private": true,
   "homepage": "http://coffee.joshnassif.com/",
   "dependencies": {
+    "@tanstack/react-query": "^5.62.15",
+    "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0",
-    "react": "^16.10.1",
-    "react-dom": "^16.10.1",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.7",
+    "react-dom": "^19.0.0",
     "react-modal-image": "^2.5.0",
+    "react-router-dom": "^7.1.1",
     "react-scripts": "^5.0.1",
     "reactjs-popup": "^1.5.0"
   },
