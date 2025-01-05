@@ -1,14 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
 import Popup from "reactjs-popup";
 
-export class CreditPopup extends Component {
-  render() {
-    return (
-      <Popup trigger={<button className="btn btn-outline-info btn-sm">i</button>} position="left center">
-      <div className="text-wrap">
-        {this.props.credit}
-      </div>
-      </Popup>
-    )
-  }
-}
+const CreditPopup = ({ credit }) => {
+  return (
+    <Popup
+      trigger={<button className="btn btn-outline-info btn-sm">i</button>}
+      position="left center"
+    >
+      <div className="text-wrap">{credit}</div>
+    </Popup>
+  );
+};
+
+export default CreditPopup;
