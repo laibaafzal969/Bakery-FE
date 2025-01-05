@@ -1,5 +1,5 @@
 import React from "react";
-import { CreditPopup } from "./Popups";
+import CreditPopup from "./Popups";
 import whirl from "../img/whirl.jpg";
 import "./intro.css";
 

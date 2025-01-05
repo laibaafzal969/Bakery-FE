@@ -6,7 +6,7 @@ import "./menu.css";
 
 const menuDescription = "Our exciting menu of delicious desserts";
 
-export const Menu = () => (
+const Menu = () => (
   <div className="container" id="menu">
     <h3 className="col text-center">Menu</h3>
     <p className="col text-center lead">{menuDescription}</p>
@@ -23,3 +23,5 @@ export const Menu = () => (
     </div>
   </div>
 );
+
+export default Menu;

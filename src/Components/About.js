@@ -1,5 +1,5 @@
 import React from "react";
-import { CreditPopup } from "./Popups";
+import CreditPopup from "./Popups";
 import "./about.css";
 
 const description =

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CreditPopup } from "./Popups";
+import CreditPopup from "./Popups";
 import "./contact.css";
 import $ from "jquery";
 
