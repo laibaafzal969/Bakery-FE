@@ -1,14 +1,39 @@
 import React, { useState } from "react";
 import CreditPopup from "./Popups";
 import "./contact.css";
-import $ from "jquery";
+import { usePost } from "../api/useApi";
+import Alert from "react-bootstrap/Alert";
 
 const Contact = () => {
+  const [alert, setAlert] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
+  });
+
+  const { mutate, isLoading } = usePost("/api/contacts", {
+    onSuccess: () => {
+      setAlert({
+        type: "success",
+        message: `Your query has been sent. We will get back to you soon!`,
+      });
+      setTimeout(() => setAlert(null), 3000);
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    },
+    onError: (error) => {
+      setAlert({
+        type: "danger",
+        message: `Failed to send your message. ${error.message}`,
+      });
+      setTimeout(() => setAlert(null), 3000);
+    },
   });
 
   const handleChange = (e) => {
@@ -28,38 +53,16 @@ const Contact = () => {
       subject: formData.subject,
       message: formData.message,
     };
-
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
-
-    $.ajax({
-      type: "POST",
-      url: "https://ba8lbixyll.execute-api.us-east-1.amazonaws.com/prod",
-      dataType: "json",
-      crossDomain: "true",
-      contentType: "application/json; charset=utf-8",
-      data: JSON.stringify(data),
-      success: function () {
-        // clear form and show a success message
-        alert("Thanks!");
-      },
-      error: function () {
-        // show an error message
-        alert("Something went wrong. Please try again.");
-      },
-    });
+    mutate(data);
   };
 
   return (
     <div id="contact">
       <div className="d-flex flex-column bd-highlight mb-3 contact-bg">
-        <div className="flex-fill">
+        <div className="flex-fill mt-5">
           <form className="react-form" method="post" onSubmit={handleSubmit}>
             <h1 id="formTitle">Contact</h1>
+            {alert && <Alert variant={alert.type}>{alert.message}</Alert>}
 
             <fieldset className="form-group">
               <label>Name:</label>

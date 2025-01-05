@@ -12,7 +12,6 @@ export const Home = () => {
       <Intro />
       <About />
       <ShowMenu />
-      <Footer />
     </div>
   );
 };
