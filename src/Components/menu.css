@@ -1,9 +1,94 @@
-.menuImage {
-	border-radius: 8px;
-	max-width: 340px;
-	max-height: 320px;
+/* Container for the Menu Page */
+#menu {
+  margin-top: 50px;
 }
 
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Menu Card Styles */
 .menuContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menu-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Disable hover transition when modal is active */
+.menu-card:hover {
+  /* transform: translateY(-10px); */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Image Styles */
+.menu-card-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 2px solid #eee;
+  transition: none !important; /* Disable transitions for modal popper */
+}
+
+/* Modal Image Popper */
+.react-modal-image__image {
+  transition: none !important; /* Ensure modal image doesn't inherit transition */
+}
+
+.menu-card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.menu-card-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.menu-card-price {
+  font-size: 1.2rem;
+  color: #e64a19;
+  font-weight: bold;
   margin-bottom: 20px;
+}
+
+.menu-card-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e64a19;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-card-btn:hover {
+  background-color: #ff5722;
+}
+
+.menu-card-btn:focus {
+  outline: none;
 }
