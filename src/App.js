@@ -9,6 +9,9 @@ import Menu from "./Components/Menu";
 import LoginPage from "./pages/Login";
 import Products from "./Components/Products";
 import { isAuthenticated } from "./utils/functions";
+import OrdersPage from "./Components/Order";
+import AdminContact from "./Components/AdminContact";
+import UsersPage from "./Components/UsersPage";
 
 const App = () => {
   const isAuth = isAuthenticated();
@@ -30,6 +33,9 @@ const App = () => {
         {isAuth && (
           <>
             <Route path="/admin/products" element={<Products />} />
+            <Route path="/admin/orders" element={<OrdersPage />} />
+            <Route path="/admin/contact" element={<AdminContact />} />
+            <Route path="/admin/users" element={<UsersPage />} />
           </>
         )}
       </Routes>

@@ -115,6 +115,13 @@ const Navbar = ({ setAuth, cartItems, setCart }) => {
               <button onClick={logout} className="btn btn-outline-light">
                 Logout
               </button>
+              <button
+                style={{ marginLeft: "10px" }}
+                onClick={() => navigate("/")}
+                className="btn btn-outline-light"
+              >
+                Shop Home
+              </button>
             </div>
           </div>
         </div>
