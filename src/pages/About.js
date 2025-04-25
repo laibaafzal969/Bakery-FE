@@ -10,9 +10,10 @@ const About = () => (
   <div id="about">
     <div className="about-banner">
       <div className="container text-center about-header">
-        <h1 className="display-3 about-title">About Spice Whirls</h1>
+        <h1 className="display-3 about-title">About Bake Connect</h1>
         <p className="lead about-subtitle">
-          A legacy of delicious handmade pastries and freshly ground coffee.
+          A legacy of delicious handmade cakes, pastries and freshly ground
+          coffee.
         </p>
       </div>
     </div>
@@ -23,18 +24,23 @@ const About = () => (
           <div className="col-md-6">
             <h2 className="display-4">Our Story</h2>
             <p>
-              Founded in 2010, Spice Whirls started as a small local bakery with
-              a simple mission: to craft the finest handmade pastries and
-              desserts. With a passion for flavor and a love for tradition, we
-              quickly became a staple in the community. Our founder, Sarah
-              Miller, a culinary expert, envisioned a space where people could
-              gather, indulge in freshly baked goods, and share in the joy of
-              great food.
+              Established in 2025, BakeConnect started out as a straightforward
+              concept motivated by the daily challenges faced by gifted women
+              like Farzana Aunty, who worked from home as bakers, handling
+              orders with handwritten journals and sporadic WhatsApp messages.
+              Our goal was very clear: to give local female entrepreneurs access
+              to a tool that is not only digital but also specifically made for
+              them. We developed a platform that speaks to Pakistani home
+              bakers' cultural and technological constraints in a way that is
+              both emotionally and literally relevant to them. With features
+              like customer loyalty monitoring, audio-based instructions, and
+              simple Urdu-English navigation, BakeConnect evolved from an app to
+              a growth partner.
             </p>
             <p>
-              Over the years, Spice Whirls has grown from a humble bakery to a
-              popular destination for those seeking the perfect blend of
-              tradition and innovation in every bite.
+              Today, one delicious dish, one devoted client, and one
+              accomplishment at a time, BakeConnect enables home bakers to turn
+              their passion for baking into successful microbusinesses.
             </p>
           </div>
           <div className="col-md-6">
@@ -59,26 +65,27 @@ const About = () => (
           <div className="col-md-6">
             <h2 className="display-4">Our Values</h2>
             <p>
-              At Spice Whirls, we pride ourselves on creating the highest
-              quality baked goods. We use only the freshest ingredients sourced
-              locally to create flavors that people can trust and savor. Here
-              are some of the values that drive us:
+              At BakeConnect, we stand by home bakers that value your health,
+              happiness, and trust more than just delicious food.
             </p>
             <ul>
               <li>
-                Commitment to Quality: We believe that every product should be
-                as perfect as the last.
+                Safe and Fresh:- Fresh, home-sourced foods and hygienic cooking
+                techniques are used to make every product; there are no hazards
+                or preservatives.
               </li>
               <li>
-                Fresh Ingredients: We source the finest ingredients from local
-                suppliers, ensuring the highest quality.
+                Reliable and High-Quality:- Each order is carefully processed.
+                Consumers are confident that they will always receive precisely
+                what they want, on schedule.
               </li>
               <li>
-                Community First: Our bakery is more than just a place to buy
-                pastries. It’s a place where people gather, relax, and connect.
+                Love Baked:- It's a passion rather than just a business. Every
+                product embodies the baker's values, history, and aspirations
+                for development.
               </li>
               <li>
-                Innovation: While we honor tradition, we are always innovating
+                Innovation:- While we honor tradition, we are always innovating
                 to bring new, exciting flavors to our menu.
               </li>
             </ul>
@@ -89,29 +96,32 @@ const About = () => (
       <section className="about-mission">
         <h2 className="display-4 text-center">Our Mission</h2>
         <p className="lead text-center">
-          To create delicious, freshly baked pastries and coffee that bring
-          people together, and to share our passion for baking with the world.
+          To empower women bakers who work from home by streamlining their
+          business processes, fostering community relationships, and assisting
+          them in become more self-assured one order at a time.
         </p>
         <div className="row text-center mission-goals">
           <div className="col-md-4">
-            <h4>1. Excellence in Every Bite</h4>
+            <h4>1. Every Step Is Simple</h4>
             <p>
-              We strive to deliver the highest quality baked goods to our
-              customers every single day.
+              Even for bakers who are not tech-savvy, we want order management,
+              customer monitoring, and menu sharing to be simple.
             </p>
           </div>
           <div className="col-md-4">
-            <h4>2. A Community Experience</h4>
+            <h4>2. Community Empowerment</h4>
             <p>
-              We aim to create a welcoming atmosphere where customers feel like
-              part of the Spice Whirls family.
+              We create a network of support so that home bakers can feel
+              appreciated, encouraged, and a part of the expanding local baking
+              community.
             </p>
           </div>
           <div className="col-md-4">
-            <h4>3. A Commitment to Sustainability</h4>
+            <h4>3. Development with Honesty</h4>
             <p>
-              We prioritize sustainability, from sourcing ingredients to
-              eco-friendly packaging options.
+              Without sacrificing quality, we support ethical, fresh, and safe
+              baking methods while empowering women to transform their passion
+              into a steady source of income.
             </p>
           </div>
         </div>
@@ -122,46 +132,46 @@ const About = () => (
         <h2 className="display-4 text-center">Meet Our Team</h2>
         <p className="lead text-center">
           Behind every perfect pastry, there's a talented team. Meet the faces
-          who bring Spice Whirls to life.
+          who bring Bake Connect to life.
         </p>
         <div className="row">
           <div className="col-md-4">
             <img
-              src="https://media.istockphoto.com/id/1466995518/photo/business-woman-and-worker-portrait-at-office-desk-as-administration-executive-company-manager.jpg?s=612x612&w=0&k=20&c=NvKeG6Fh0_VVfH_N0Ka-5j8284XJhL2VTJfe6IwDkWQ="
+              src="/farzana.jpg"
               alt="Sarah Miller - Founder"
               className="img-fluid team-photo"
             />
-            <h4>Sarah Miller</h4>
+            <h4>Mr's Farzana</h4>
             <p>Founder & Head Baker</p>
             <p>
-              Sarah founded Spice Whirls in 2010 with a vision to share her love
-              for baking with the world. She still oversees the baking process,
-              ensuring every product meets the highest standard.
+              Farzana founded BakeConnect in 2025 with a vision to share her
+              love for baking with the world. She still oversees the baking
+              process, ensuring every product meets the highest standard.
             </p>
           </div>
           <div className="col-md-4">
             <img
-              src={pastryChef}
+              src={"/laiba.jpg"}
               alt="John Doe - Pastry Chef"
               className="img-fluid team-photo"
             />
-            <h4>John Doe</h4>
-            <p>Pastry Chef</p>
+            <h4>Laiba Afzal</h4>
+            <p>Pastry / Cake Chef</p>
             <p>
-              John’s creativity and passion for baking have helped elevate Spice
-              Whirls’ dessert menu to new heights.
+              Laiba creativity and passion for baking have helped elevate
+              BakeConnect dessert menu to new heights.
             </p>
           </div>
           <div className="col-md-4">
             <img
-              src="https://static7.depositphotos.com/1298242/789/i/450/depositphotos_7894140-stock-photo-cheerful-hispanic-man-smiling-at.jpg"
+              src="/zoella.jpg"
               alt="Jane Smith - Coffee Specialist"
               className="img-fluid team-photo"
             />
-            <h4>Joseph Smith</h4>
+            <h4>Zoella Malik</h4>
             <p>Coffee Specialist</p>
             <p>
-              Joseph has a deep knowledge of coffee, ensuring that every cup
+              Zoella has a deep knowledge of coffee, ensuring that every cup
               served is perfectly brewed.
             </p>
           </div>

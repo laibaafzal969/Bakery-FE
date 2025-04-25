@@ -6,6 +6,7 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { usePost } from "../api/useApi";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = ({ setAuth, cartItems, setCart }) => {
   const navigate = useNavigate();
@@ -155,6 +156,30 @@ const Navbar = ({ setAuth, cartItems, setCart }) => {
                   <Link className="nav-link" to="/">
                     Home
                   </Link>
+                </li>
+                <li className="nav-item">
+                  <HashLink smooth className="nav-link" to="/#problem-statment">
+                    Problem Statement
+                  </HashLink>
+                </li>
+                <li className="nav-item">
+                  <HashLink
+                    smooth
+                    className="nav-link"
+                    to="/#problem-understanding"
+                  >
+                    Problem Understanding
+                  </HashLink>
+                </li>
+                <li className="nav-item">
+                  <HashLink smooth className="nav-link" to="/#user-persona">
+                    User Persona
+                  </HashLink>
+                </li>
+                <li className="nav-item">
+                  <HashLink smooth className="nav-link" to="/#story-board">
+                    Story Board
+                  </HashLink>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/about">

@@ -12,7 +12,7 @@ const Intro = () => (
             Welcome to
           </h3>
           <h1 className="display-1" id="introText">
-            Spice Whirls
+            Bake Connect
           </h1>
           <img
             src={whirl}

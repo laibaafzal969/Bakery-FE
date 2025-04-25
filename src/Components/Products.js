@@ -140,7 +140,9 @@ const Products = () => {
                 <div className="card-body">
                   <h5 className="card-title">{product.name}</h5>
                   <p className="card-text">{product.description}</p>
-                  <p className="card-text">Price: ${product.price}</p>
+                  <p className="card-text">
+                    Price: ${product.price?.toFixed(2)}
+                  </p>
                   <button
                     className="btn btn-warning"
                     onClick={() => handleEdit(product)}
